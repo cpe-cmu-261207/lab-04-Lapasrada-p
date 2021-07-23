@@ -7,13 +7,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src='script.js' defer></script>
 	<title>Lab 04</title>
-	<!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="style.css">
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/031bbc2c90.js" crossorigin="anonymous"></script>
+
 </head>
 
-<body>
-	<h1>Minimal Todo List</h1>
-	<input  type='text'>
-	<button>+</button>
+<body class="">
+	<div class="box">
+		<!-- <header class="pb-2 ct my-7 mx-28">Minimal Todo List</header> -->
+		<header>To do List</header>
+		<div class="inputText">
+			<input type="text" placeholder="Add your new to do">
+			<button><i class="fas fa-plus"></i></button>
+		</div>
+		<ul class ="todolist">
+			<li>Lorem ipsum dolor sit amet<span><i class="fas fa-check-circle"></i><i class="fas fa-trash"></i></span></li>
+			<li>Lorem ipsum dolor sit amet<span><i class="fas fa-check-circle"></i><i class="fas fa-trash"></i></span></li>
+			<li>Lorem ipsum dolor sit amet<span><i class="fas fa-check-circle"></i><i class="fas fa-trash"></i></span></li>
+			<li>Lorem ipsum dolor sit amet<span><i class="fas fa-check-circle"></i><i class="fas fa-trash"></i></span></li>
+			<li>Lorem ipsum dolor sit amet<span><i class="fas fa-check-circle"></i><i class="fas fa-trash"></i></span></li>
+			<li>Lorem ipsum dolor sit amet<span><i class="fas fa-check-circle"></i><i class="fas fa-trash"></i></span></li>
+		</ul>
+		<div class="clearAll">
+			<span>You have 3 not completed</span>
+			<button>Clear All</button>
+		</div>
+	</div>
+
 </body>
 
 </html>

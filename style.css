@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ct{     
+    text-align: center;
+}
+
+body{
+    height: 1000px;
+    width: 100%;
+    background:  #FFBD33;
+}
+
+.box{
+    margin: 120px auto;
+    max-width: 400px;
+    width: 100%;
+    background-color: bisque;
+    border-radius: 6px;
+    padding: 25px;
+}
+.box header{
+    font-size: 30px;
+    font-weight: 600px;
+}
+.box inputText{
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+} 
+.inputText input{
+    width: 85%;
+    height: 100%;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    border-radius: 3px;
+    padding-left: 20px;
+}
+.inputText button{
+    width: 60px;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    background: #8E49E8;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+.box .todolist{
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.todolist li{
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+}
+.todolist li span{
+    position: absolute;
+    right: -45px;
+    width: 45px;
+    text-align: center;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    color: orange;
+    /* background: red; */
+    transition: all 0.3s ease;
+}
+.todolist li:hover span{
+    right: 0px;
+
+}
+.box .clearAll{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.clearAll button{
+    border: none;
+    outline: none;
+    color: white;
+    background: #8E49E8;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px 10px;
+}
