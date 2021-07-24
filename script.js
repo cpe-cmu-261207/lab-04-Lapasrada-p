@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const inputBox = document.querySelector(".inputText input")
 const addButton = document.querySelector(".inputText button")
 const todolist = document.querySelector(".todolist")
@@ -66,6 +65,3 @@ clearAll.onclick = ()=>{
     localStorage.setItem("List Todo", JSON.stringify(arr));
     showList();
 }
-=======
-/* Your code here */
->>>>>>> parent of 092010a (outline)
