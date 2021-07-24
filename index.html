@@ -9,26 +9,24 @@
 	<title>Lab 04</title>
 	<link rel="stylesheet" href="style.css">
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/031bbc2c90.js" crossorigin="anonymous"></script>
+
 </head>
+
+<!-- <i class="fas fa-check-circle"></i> -->
+<!-- <section onclick="doneTask(${index})";><i class="fas fa-check-circle"></i></section>
+<span onclick="deleteTask(${index})";><i class="fas fa-trash"></i></span> -->
 
 <body class="">
 	<div class="box">
-		<!-- <header class="pb-2 ct my-7 mx-28">Minimal Todo List</header> -->
 		<header>To do List</header>
 		<div class="inputText">
-			<input type="text" placeholder="Add your new to do">
-			<button><i class="fas fa-plus"></i></button>
+			<input id="myInput" type="text" placeholder="Add your new to do">
+			<button id="myBtn"><i class="fas fa-plus"></i></button>
 		</div>
-		<ul class ="todolist">
-			<li>Lorem ipsum dolor sit amet<span><i class="fas fa-check-circle"></i><i class="fas fa-trash"></i></span></li>
-			<li>Lorem ipsum dolor sit amet<span><i class="fas fa-check-circle"></i><i class="fas fa-trash"></i></span></li>
-			<li>Lorem ipsum dolor sit amet<span><i class="fas fa-check-circle"></i><i class="fas fa-trash"></i></span></li>
-			<li>Lorem ipsum dolor sit amet<span><i class="fas fa-check-circle"></i><i class="fas fa-trash"></i></span></li>
-			<li>Lorem ipsum dolor sit amet<span><i class="fas fa-check-circle"></i><i class="fas fa-trash"></i></span></li>
-			<li>Lorem ipsum dolor sit amet<span><i class="fas fa-check-circle"></i><i class="fas fa-trash"></i></span></li>
-		</ul>
+		<ul class="todolist"></ul>
 		<div class="clearAll">
-			<span>You have 3 not completed</span>
+			<span>You have <span class="notDoneNum"></span> not completed</span>
 			<button>Clear All</button>
 		</div>
 	</div>
@@ -42,5 +40,7 @@
 		});
 	</script>
 
+
 </body>
+
 </html>
