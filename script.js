@@ -64,4 +64,6 @@ clearAll.onclick = ()=>{
     arr =[];
     localStorage.setItem("List Todo", JSON.stringify(arr));
     showList();
+
 }
+
