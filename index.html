@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src='script.js' defer></script>
+	
 	<title>Lab 04</title>
 	<link rel="stylesheet" href="style.css">
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
@@ -13,34 +14,31 @@
 
 </head>
 
-<!-- <i class="fas fa-check-circle"></i> -->
-<!-- <section onclick="doneTask(${index})";><i class="fas fa-check-circle"></i></section>
-<span onclick="deleteTask(${index})";><i class="fas fa-trash"></i></span> -->
-
 <body class="">
 	<div class="box">
 		<header>To do List</header>
+		<!-- inputBox -->
 		<div class="inputText">
-			<input id="myInput" type="text" placeholder="Add your new to do">
-			<button id="myBtn"><i class="fas fa-plus"></i></button>
+			<input type='text' id="TaskInput" placeholder="Add your new to do" onkeypress="keypress(event)">
+			<button onclick="EnteringInput()" ><i class="fas fa-plus"></i></button>
+
 		</div>
-		<ul class="todolist"></ul>
-		<div class="clearAll">
-			<span>You have <span class="notDoneNum"></span> not completed</span>
+		<!-- todolist -->
+		<div id="dolist" class="">
+			
+		</div>
+
+		<!-- todonelist -->
+		<div id="doneAll" class=" ">
+
+		</div>
+
+		<!-- clearAll -->
+		<!-- <div class="clearAll">
 			<button>Clear All</button>
-		</div>
+		</div> -->
 	</div>
-	<script>
-		var input = document.getElementById("myInput");
-		input.addEventListener("keyup", function (event) {
-			if (event.keyCode === 13) {
-				event.preventDefault();
-				document.getElementById("myBtn").click();
-			}
-		});
-	</script>
-
-
+	
 </body>
 
 </html>

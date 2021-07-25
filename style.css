@@ -3,20 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-.ct{     
-    text-align: center;
-}
-
 body{
     height: 1000px;
     width: 100%;
     background:  #FFBD33;
+    /* background-image: linear-gradient(130deg, pink, #f6d365); */
 }
-
 .box{
     margin: 120px auto;
-    max-width: 550px;
+    max-width: 600px;
     width: 100%;
+    /* border-color: black; */
     background-color: bisque;
     border-radius: 25px;
     padding: 25px;
@@ -31,105 +28,100 @@ body{
     display: flex;
     height: 45px;
     width: 100%;
-    margin: 20px 0;
+    margin: 20px 0; 
 } 
 .inputText input{
     width: 80%;
     height: 100%;
-    border: 2px solid gray;
-    font-size: 20px; 
+    border: 02px solid gray;
+    font-size: 25px; 
     border-radius: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 20px;
     margin-bottom: 17px;
-    margin-left: 10px;
-    /* text-align: center; */
+    margin-left: 14px;
 }
 .inputText button{
-    width: 60px;
+    width: 10%;
     height: 100%;
     border: none;
     outline: none;
     color: white;
     background: #FF6D00;
-    font-size: 22px;
+    font-size: 25px;
     cursor: pointer;
-    border-radius: 3px;
-    margin-left: 5px;
-    opacity: 0.5;
-    pointer-events:none;
+    border-radius: 5px;
+    /* margin-left: 5px; */
+    margin: 20px 0; 
+    
 }
-.inputText button.active{
-    opacity: 1;
-    pointer-events:auto;
+
+.inputText button:hover {
+    /* background: pink; */
+    transform: scale(1.2);
 }
 .box .todolist{
     max-height: 1350px;
     overflow-y: auto;
 }
-
-.todolist li{
-    list-style: none;
-    height: 45px;
-    line-height: 40px;
-    position: relative;
-    background: #f2f2f2;
-    border-radius: 10px;
-    margin-bottom: 8px;
-    padding: 0 15px;
-    cursor: default;
-    overflow: hidden;
-}
-.todolist li span{
-    position: absolute;
-    height: 45px;
-    right: -65px;
-    width: 65px;
-    text-align: center;
-    border-radius: 0 5px 5px 0;
-    max-height: auto;
-    cursor: pointer;
-    color: orange;
-    background: red;
-    transition: all 0.3s ease;
-}
-/* .todolist li section{
-    position: absolute;
-    right: -45px;
-    width: 45px;
-    text-align: center;
-    border-radius: 0 3px 3px 0;
-    cursor: pointer;
-    color: green;
-    background: pink;
-    transition: all 0.3s ease;
-} */
-
-
-.todolist li:hover span{
-    right: 0px;
-}
-.box .clearAll{
+.todo{
+    margin: 10px;
+    background: white;
+    color: black;
+    font-size: 25px;
     display: flex;
-    width: 100%;
-    margin-top: 20px;
     justify-content: space-between;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 10px;
+    line-height: 47px;
     align-items: center;
+}
+.todone{
+    text-decoration: line-through;
+    margin: 10px;
+    background: rgb(235, 215, 40);
+    opacity: .7;
+    color: black;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding-left: 30px;
+    line-height: 47px;
+    /* align-items: center; */
+}
+
+.pressDoneBtn{          
+    background-color: rgb(68, 194, 68);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 5px;
+}
+.pressBinBtn{
+    background-color: rgb(238, 74, 74);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 5px;
+}
+.fa-trash, .fa-check{
+    pointer-events: none;
 }
 .clearAll button{
     border: none;
     outline: none;
     color: white;
     background: #8E49E8;
-    font-size: 25px;
+    font-size: 17px;
     cursor: pointer;
     border-radius: 3px;
-    padding: 8px 10px;
-    opacity: 0.6;
-    pointer-events:none;
-}
-.clearAll button.active{
-    opacity: 1;
-    pointer-events:auto;
+    padding: 5px 10px;
+    margin-left: 16px;
 }
