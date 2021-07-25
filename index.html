@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src='script.js' defer></script>
 	
@@ -15,28 +15,30 @@
 </head>
 
 <body class="">
-	<div class="box">
-		<header>To do List</header>
+	<div class="box shadow-2xl">
+		<header class="tracking-wide">To do List  <i class="fas fa-bookmark"></i></header>
 		<!-- inputBox -->
 		<div class="inputText">
 			<input type='text' id="TaskInput" placeholder="Add your new to do" onkeypress="keypress(event)">
-			<button onclick="EnteringInput()" ><i class="fas fa-plus"></i></button>
+			<button onclick="pressEnter()" ><i class="fas fa-plus"></i></button>
 
 		</div>
 		<!-- todolist -->
-		<div id="dolist" class="">
+		<div class="tab">
+			<div id="dolist" class="tracking-widest">
+			</div>
+		</div>
+		
+
+		<!-- todonelist -->
+		<div id="doneAll" class="tracking-widest">
 			
 		</div>
 
-		<!-- todonelist -->
-		<div id="doneAll" class=" ">
-
-		</div>
-
 		<!-- clearAll -->
-		<!-- <div class="clearAll">
+		<div class="clearAll">
 			<button>Clear All</button>
-		</div> -->
+		</div>
 	</div>
 	
 </body>
