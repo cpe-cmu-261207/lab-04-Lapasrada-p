@@ -4,70 +4,80 @@
     box-sizing: border-box;
 }
 body{
-    height: 1000px;
     width: 100%;
-    background:  #FFBD33;
+    background:  #fdb416;
     /* background-image: linear-gradient(130deg, pink, #f6d365); */
 }
 .box{
-    margin: 120px auto;
-    max-width: 600px;
+    margin: 130px auto;
+    max-width: 800px;
     width: 100%;
     /* border-color: black; */
-    background-color: bisque;
-    border-radius: 25px;
+    background-color: rgb(255, 105, 45);
+    border-radius: 20px;
     padding: 25px;
+    border: 4px solid black;
 }
 .box header{
     font-size:40px;
     font-weight: 800px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     padding-left: 15px;
+    border-bottom: 3px black solid;
+    border-width: auto;
+    /* text-align: center; */
 }
 .box inputText{
     display: flex;
-    height: 45px;
+    height: 60px;
     width: 100%;
     margin: 20px 0; 
+    align-items: center;
 } 
 .inputText input{
-    width: 80%;
+    width: 85%;
     height: 100%;
-    border: 02px solid gray;
+    border: 2px solid gray;
     font-size: 25px; 
     border-radius: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 20px;
+    margin-top: 34px;
     margin-bottom: 17px;
     margin-left: 14px;
+    text-align: center;
 }
+
 .inputText button{
     width: 10%;
     height: 100%;
     border: none;
     outline: none;
     color: white;
-    background: #FF6D00;
+    /* background: #fdb416; */
+    background: #8E49E8;
     font-size: 25px;
     cursor: pointer;
     border-radius: 5px;
     /* margin-left: 5px; */
     margin: 20px 0; 
+    border-radius: 5px;
+    border: 2px black solid;
     
 }
 
 .inputText button:hover {
     /* background: pink; */
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
-.box .todolist{
-    max-height: 1350px;
+/* .tab{
+    max-height: 500px;
     overflow-y: auto;
-}
+} */
 .todo{
     margin: 10px;
-    background: white;
+    background: rgb(253, 221, 77);
     color: black;
     font-size: 25px;
     display: flex;
@@ -77,11 +87,16 @@ body{
     padding-right: 10px;
     line-height: 47px;
     align-items: center;
+    border: 3px solid black;
 }
+.todo:hover{
+    transform: scale(1.06);
+}
+
 .todone{
     text-decoration: line-through;
     margin: 10px;
-    background: rgb(235, 215, 40);
+    background: rgb(125, 117, 233);
     opacity: .7;
     color: black;
     font-size: 25px;
@@ -94,22 +109,27 @@ body{
 }
 
 .pressDoneBtn{          
-    background-color: rgb(68, 194, 68);
+    background-color: rgb(54, 136, 0);
     color: white;
     border: none;
     padding: 0.5rem;
     font-size: 30px;
     cursor: pointer;
     margin: 5px;
+    border-radius: 5px;
+    border: 3px black solid;
 }
+
 .pressBinBtn{
-    background-color: rgb(238, 74, 74);
+    background-color: rgb(247, 11, 11);
     color: white;
     border: none;
+    border-radius: 5px;
     padding: 0.5rem;
     font-size: 30px;
     cursor: pointer;
     margin: 5px;
+    border: 3px black solid;
 }
 .fa-trash, .fa-check{
     pointer-events: none;
@@ -124,4 +144,11 @@ body{
     border-radius: 3px;
     padding: 5px 10px;
     margin-left: 16px;
+    margin-top: 25px;
+    border-radius: 5px;
+    border: 2px black solid;
+}
+
+.clearAll button:hover{
+    transform: scale(1.2);
 }
