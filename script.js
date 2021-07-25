@@ -12,14 +12,14 @@ if (localStorage.getItem('userData') == null) {
 function coutAlert(input) {
     if (input.length == 0 || input.indexOf(' ') == 0) {
         document.getElementById("TaskInput").value = ""
-        alert("CANNOT BE EMPTY")
+        alert("CANNOT BE EMPTY, PLEASE ADD TO DO LIST")
         return false
     }
     return true
 }
 function keypress(ev){
     if (ev.keyCode === 13) 
-        EnteringInput()
+        pressEnter()
 }
 function empty(input){
     if (input.length == 0 || input.indexOf(' ') == 0) {
@@ -27,7 +27,6 @@ function empty(input){
     }
     return true
 }
-
 function ArrIndex(arr, key) {
     for (let j = 0; j < arr.length; ++j) {
         if (arr[j] === key) 
@@ -104,7 +103,7 @@ function addToDone(inputDone){
 }
 
 
-function EnteringInput(){
+function pressEnter(){
     cout("")
     const taskIn = document.getElementById("TaskInput").value
 
@@ -131,10 +130,10 @@ localData.completeArr.map(x => {
 })
 
 //clearAll Click
-// const clearAll = document.querySelector(".clearAll button")
-// clearAll.addEventListener('click', () =>{
-//     window.localStorage.clear();
-//     document.getElementById("doneAll").reset();
+const clearAll = document.querySelector(".clearAll button")
+clearAll.addEventListener('click', () =>{
+    localStorage.clear();
+    location.reload();
     
-// })
+})
 
